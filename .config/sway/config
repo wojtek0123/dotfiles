@@ -10,8 +10,10 @@ set $left h
 set $down j
 set $up k
 set $right l
+# set $term foot
 set $term kitty
 set $browser flatpak run app.zen_browser.zen
+set $pass-mng flatpak run com.bitwarden.desktop
 set $screenbg /usr/share/backgrounds/images/sway.png
 set $lockscreenbg /usr/share/backgrounds/images/sway.png
 
@@ -82,9 +84,9 @@ bindsym $mod+p exec grimshot --notify save screen
 # Active window
 bindsym $mod+Ctrl+p exec grimshot --notify save active
 # Select area
-bindsym Ctrl+p exec grimshot --notify save area
+bindsym $mod+alt+Ctrl+p exec grimshot --notify save area
 # Copy area to clipboard
-bindsym $mod+Shift+s exec grimshot copy area
+bindsym $mod+alt+Shift+c exec grimshot copy area
 
 gaps inner 8
 # gaps outer 8
@@ -205,6 +207,7 @@ gaps inner 8
 
 
 bindsym $mod+Shift+b exec $browser
+bindsym $mod+Shift+p exec $pass-mng
 
 font pango:"JetBrainsMono Nerd Font" Regular 20
 

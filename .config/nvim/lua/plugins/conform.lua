@@ -20,6 +20,7 @@ require("conform").setup({
     astro = { "prettier", "prettierd" },
     svg = { "prettier", "prettierd" },
     json = { "prettier", "prettierd" },
+    markdown = { "prettier" },
   },
   notify_on_error = false,
   format_on_save = {

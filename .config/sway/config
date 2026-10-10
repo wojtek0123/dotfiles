@@ -271,6 +271,7 @@ default_floating_border pixel 2
 # class                 border  bground text    indicator child_border
 client.focused          #dcd7ba #dcd7ba #ffffff #dcd7ba   #dcd7ba
 
+# set dark theme as preferable
 exec_always gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 exec_always gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 

@@ -29,6 +29,7 @@ unset rc
 alias nv="nvim ."
 alias e="exit"
 export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$HOME/go/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/home/wojtek/.local/share/pnpm"
